@@ -35,7 +35,7 @@ class Distance:
             )
         return self
 
-    def __mul__(self, other: float) -> float:
+    def __mul__(self, other: int | float) -> Self:
         if not isinstance(other, (int, float)):
             raise TypeError(
                 f"Unsupported operand type(s) for *: "
